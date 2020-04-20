@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js?v20200303"></script>
+	<script>window.jQuery || document.write('<script src="/bower/bootstrap/dist/js/vendor/jquery.min.js?v20200303"><\/script>')</script>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="/favicon.ico">
+	<title>Директ Кредит - Корпоративный портал{% block title %}{% endblock %}</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="/bower/bootstrap/dist/css/bootstrap.min.css?v20200303" rel="stylesheet">
+
+	<link rel="stylesheet" href="/bower/dropzone/dist/min/dropzone.min.css?v20200303"/>
+
+
+	<link rel="stylesheet" href="/css/bootstrap-tagsinput.css?v20200303"/>
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.min.css?v20200303">
+
+	<link href="/bower/select2/dist/css/select2.min.css?v20200303" rel="stylesheet"/>
+	<script src="/bower/select2/dist/js/select2.min.js?v20200303"></script>
+	<script src="/bower/select2/dist/js/i18n/ru.js?v20200303"></script>
+
+	<link rel="stylesheet" type="text/css" href="/bower/Calendario-master/css/calendar.css?v20200303"/>
+	<link rel="stylesheet" type="text/css" href="/bower/Calendario-master/css/custom_2.css?v20200303"/>
+
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?v20200303" rel="stylesheet">
+	<script src="/bower/Calendario-master/js/modernizr.custom.63321.js?v20200303"></script>
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	{#<link href="{{ asset('assets/vendor/bootstrap/dist/css/ie10-viewport-bug-workaround.css') }}" rel="stylesheet">#}
+
+	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+	{#<!--[if lt IE 9]><script src="{{ asset('assets/js/ie8-responsive-file-warning.js') }}"></script><![endif]-->#}
+	{#<script src="{{ asset('assets/vendor/bootstrap/dist/js/ie-emulation-modes-warning.js') }}"></script>#}
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js?v20200303"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js?v20200303"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="/bower/jquery-ui/themes/smoothness/jquery-ui.min.css?v20200303">
+
+	<link href="{{ asset('bundles/lifotypeahead/css/typeaheadbundle.css?v20200303') }}" type="text/css" rel="stylesheet"/>
+	<script src="{{ asset('bundles/lifotypeahead/js/bootstrap-typeahead.js?v20200303') }}"></script>
+	<script src="{{ asset('bundles/lifotypeahead/js/typeaheadbundle.js?v20200303') }}"></script>
+
+	<script type="text/javascript" src="{{ asset('bundles/goswebsocket/js/gos_web_socket_client.js?v20200303') }}"></script>
+	<script type="text/javascript" src="{{ asset('bundles/goswebsocket/js/vendor/autobahn.min.js?v20200303') }}"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="/css/direct.css?v20200303"/>
+
+	<script src="/bower/moment/moment.js?v20200303"></script>
+	<script src="/bower/moment/locale/ru.js?v20200303"></script>
+	<script type="text/javascript" src="/js/tempusdominus-bootstrap-4.min.js"></script>
+	<link rel="stylesheet" href="/css/tempusdominus-bootstrap-4.min.css" />
+</head>
+
+<body>
+
+<div class="wrapper container-fluid">
+	<div class="row">
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark justify-content-around">
+			<div class="header_menu d-flex justify-content-between">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-lg-6 text-left">
+									<a class="navbar-brand" href="#">My Application</a>
+								</div>
+								<div class="col-lg-6 text-right">
+									<button class="navbar-toggler" type="button" data-toggle="collapse"
+									        data-target="#navbarsExampleDefault"
+									        aria-controls="navbarsExampleDefault" aria-expanded="false"
+									        aria-label="Toggle navigation">
+										<span class="navbar-toggler-icon"></span>
+									</button>
+									<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+										<ul class="navbar-nav mr-auto">
+											<li class="nav-item active">
+												<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Link</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link disabled" href="#">Disabled</a>
+											</li>
+											<li class="nav-item dropdown">
+												<a class="nav-link dropdown-toggle" href="http://example.com"
+												   id="dropdown01"
+												   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+												<div class="dropdown-menu" aria-labelledby="dropdown01">
+													<a class="dropdown-item" href="#">Action</a>
+													<a class="dropdown-item" href="#">Another action</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+</div>
+
+<main role="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>Получение кадастровых данных</h2>
+				<p class="font-weight-bold">Кадастровые номера</p>
+				<form method="post" class="" enctype="multipart/form-data" action="{{ path('homepage_search') }}">
+					<div class="form-group">
+						<input name="query" class="form-control" type="search" placeholder="69:29:0000022:1306, 69:29:0000022:1307"
+						       aria-label="Поиск" value="" required="required">
+					</div>
+					<p class="text-muted">Введите кадастровые номера через запятую. Например,"69:29:0000022:1306,
+						69:29:0000022:1307" </p>
+					<button class="btn btn-info" type="submit"> Получить данные</button>
+				</form>
+			</div>
+		</div>
+		<hr>
+
+		{% if plots|length %}
+			<p>Всего {{ plots|length }} запис{% if plots|length == 1 %}ь{% else %}и{% endif %}</p>
+			<div class="table-responsive table-end">
+				<table class="table table-striped">
+					<thead>
+					<tr>
+						<th>Кадастровый номер</th>
+						<th>Адрес</th>
+						<th width="2%">Стоимость</th>
+						<th width="3%">Площадь </th>
+					</tr>
+					</thead>
+					<tbody>
+					{% for item in plots %}
+						<tr>
+							<td>{{ item.cadastralNumber }}</td>
+							<td>{{ item.address }}</td>
+							<td class="text-nowrap">{{ item.price }} ₽</td>
+							<td class="text-nowrap">{{ item.area }} м&sup2</td>
+						</tr>
+					{% endfor %}
+					</tbody>
+				</table>
+			</div>
+		{% endif %}
+	</div>
+</main>
+
+<footer class="page-footer d-flex align-items-center fixed-bottom">
+	<div class="container">
+		<div class="row align-items-center justify-content-between">
+			<p>&copy; My Application 2018</p>
+		</div>
+	</div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<script src="/bower/jquery.inputmask/dist/jquery.inputmask.min.js?v20200303"></script>
+<script src="/bower/jquery-ui/jquery-ui.min.js?v20200303"></script>
+<script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js?v20200303" ></script>
+<script src="/bower/bootstrap/dist/js/bootstrap.min.js?v20200303"></script>
+<script src="/bower/remarkable-bootstrap-notify/bootstrap-notify.min.js?v20200303"></script>
+<script src="/bower/dropzone/dist/min/dropzone.min.js?v20200303"></script>
+
+<script type="text/javascript" src="/bower/Calendario-master/js/jquery.calendario.min.js?v20200303"></script>
+<script type="text/javascript" src="/bower/Calendario-master/js/data.js?v20200303"></script>
+
+
+<script src="/bower/bootstrap/js/dist/tooltip.js?v20200303"></script>
+
+<script src="/js/base.js?v20200303"></script>
+
+<script src="/bower/bootstrap-confirmation2/dist/bootstrap-confirmation.js?v20200303"></script>
+
+<script src="/bower/Sortable/Sortable.js?v20200303"></script>
+<script src="/js/bootstrap-tagsinput.js?v20200303"></script>
+<script src="/js/main.js?v20200303"></script>
+<script src="/js/jquery.fancybox.min.js?v20200303"></script>
+
+</body>
+</html>

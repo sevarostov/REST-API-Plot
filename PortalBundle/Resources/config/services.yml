@@ -1,0 +1,4 @@
+services:
+    portal.component:
+            class: PortalBundle\ViewHelpers\Component
+            arguments: ['@doctrine']
