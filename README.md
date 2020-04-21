@@ -1,5 +1,6 @@
 # REST-API-Plot
 REST API Plot to server http://pkk.bigland.ru/api/test/plots
+Project is on Symfony 3.4 framework
 
 # Данные по земельным участкам
 Поиск данных по одному или нескольким земельным участкам, реализованный в виде обращения к  
